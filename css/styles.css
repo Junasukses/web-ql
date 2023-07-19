@@ -1,14 +1,18 @@
-html{
-    --image-gradient: linear-gradient(
-        to bottom left,
-        rgba(68, 67, 84, 0.7),
-        rgba(68, 67, 84, 0.9)
-    )
+html {
+	--image-gradient: linear-gradient(
+		to bottom left,
+		rgba(68, 67, 84, 0.7),
+		rgba(68, 67, 84, 0.8)
+	);
 }
 
 .hero-about {
 	background-image: var(--image-gradient), url("../images/about.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 680px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 680px;
+}
+
+.container {
+	padding: 4em 1.2em;
 }
