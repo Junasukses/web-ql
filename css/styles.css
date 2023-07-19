@@ -1,0 +1,14 @@
+html{
+    --image-gradient: linear-gradient(
+        to bottom left,
+        rgba(68, 67, 84, 0.7),
+        rgba(68, 67, 84, 0.9)
+    )
+}
+
+.hero-about {
+	background-image: var(--image-gradient), url("../images/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+}
