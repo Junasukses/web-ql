@@ -1,14 +1,59 @@
-html{
-    --image-gradient: linear-gradient(
-        to bottom left,
-        rgba(68, 67, 84, 0.7),
-        rgba(68, 67, 84, 0.9)
-    )
+html {
+	--image-gradient: linear-gradient(
+		to bottom left,
+		rgba(68, 67, 84, 0.7),
+		rgba(68, 67, 84, 0.8)
+	);
 }
 
 .hero-about {
 	background-image: var(--image-gradient), url("../images/about.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 680px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 680px;
+}
+
+.hero-layanan {
+	background-image: var(--image-gradient), url("../images/layanan.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+
+.container {
+	padding: 4em 1.2em;
+}
+
+.circle-left {
+	background: radial-gradient(
+		circle,
+		rgba(232, 244, 242, 0.3) 0%,
+		rgba(232, 244, 242, 1) 100%
+	);
+	filter: blur(35px);
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	left: -60%;
+	top: 45%;
+	transform: translate(60%, -45%);
+	position: absolute;
+	z-index: -10;
+}
+
+.circle-right {
+	background: radial-gradient(
+		circle,
+		rgba(232, 244, 242, 0.3) 0%,
+		rgba(232, 244, 242, 1) 100%
+	);
+	filter: blur(35px);
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	left: 150%;
+	top: 45%;
+	transform: translate(-150%, -45%);
+	position: absolute;
+	z-index: -10;
 }
