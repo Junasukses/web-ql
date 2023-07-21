@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QL</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/a1e1dd5662.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function () {
+                $("#footer").load("footer.html");
+                $("#navbar").load("navbar.html");
+            });
+        </script>
+    </head>
+<body>
+    <div id="navbar"></div>
+    <section class="flex items-center justify-center w-full h-[463px] bg-[url('./images/portofolio/bg_hero.png')] bg-cover">
+        <div class="flex flex-column gap-10 justify-center items-center text-white">
+          <p class="text-[40px] font-bold">Portofolio</p>
+          <p class="text-[24px]">Lihat bagaimana kami membantu meningkatkan transformasi bisnis Anda</p>
+        </div>
+    </section>
+
+   
+    <section class="flex flex-column w-full p-10 items-center justify-center w-full w-[1400px]">
+        <div class="flex gap-[10px] self-start  text-white">
+            <button class="p-[10px] rounded-[6px] font-semibold text-[20px] ease-in duration-100 text-black focus:text-white focus:bg-[#106EED]">Semua</button>
+            <button class="p-[10px] rounded-[6px] font-semibold text-[20px] ease-in duration-100 text-black focus:text-white focus:bg-[#106EED]">Mobile Development</button>
+            <button class="p-[10px] rounded-[6px] font-semibold text-[20px] ease-in duration-100 text-black focus:text-white focus:bg-[#106EED]">Website Development</button>
+        </div>
+
+        <div class="w-full">
+            <div class="flex flex-wrap justify-between">
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">PJB</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_pjb.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">Olympic Furniture</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_olympic_furniture.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between">
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">Mitra Olympic</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_mitra_olympic.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">PLN Batubara</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_pln_batubara.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between">
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">Platinum Ceramics</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_platinum_ceramics.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+                <div class="flex flex-column w-[645px] gap-[10px] justify-between p-[12px]">
+                    <p class="w-full font-semibold text-[24px]">INTEGRA</p>
+                    <div class="max-w-[621px]">
+                        <img src="./images/portofolio/web_integra.png" alt="pjb">
+                    </div>
+                    <button class="bg-[#272643] py-[11px] px-[10px] rounded-[10px] text-white text-bold text-[25px]">Lihat Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center h-[59px] w-[664px] bg-[#272643] rounded-[15px] text-white my-20">
+            <button class="text-[25px] font-bold ">See More</button>
+        </div>
+
+    </section>
+
+    <div id="footer"></div>
+   
+</body>
+</html>
