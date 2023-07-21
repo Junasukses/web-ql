@@ -23,9 +23,180 @@
 <body>
     <div id="navbar"></div>
     <div class="hero-blog flex flex-col justify-center items-center text-white space-y-8">
-        <input type="text" class="w-[50%] rounded-lg px-[1em] py-[0.5em]" placeholder="Cari Disini">
+        <div class="relative w-[50%]">
+            <input type="text"
+                class="rounded-lg px-[1em] py-[0.8em] w-full text-black focus:ring-blue-500 focus:outline-0 focus:ring-4"
+                placeholder="Cari Disini">
+            <button type="submit" class="absolute text-black top-[25%] right-[2%] hover:text-blue-400"><span
+                    class="fa fa-search"></span></button>
+        </div>
+
     </div>
-    <div class="h-[400px]"></div>
+    <div class="w-full py-[3em]">
+        <ul class="flex justify-center space-x-2">
+            <li>
+                <a href="#" class="px-[2em] py-[0.5em] bg-blue-700 text-white rounded-lg hover:no-underline">Semua</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Engineering</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Testing</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Project
+                    Manager</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Business</a>
+            </li>
+        </ul>
+    </div>
+    <div class="px-[8em] pt-[4em] pb-[1em]">
+        <div class="grid grid-cols-3 gap-6">
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject1.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Scriptless Test Automation with TestProject</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Scriptless test automation is a method to automate tests using tools instead of
+                    writing test scripts
+                    from scratch. The term scriptless refers to an approach to automate the functional test cases
+                    without or with a minimum amount of code (some code might be required to handle the critical
+                    actions). There are some tools that the tester could use to do automation ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject2.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Test Automation with Katalon: Optimize Script Reusability By
+                    Using a Custom Keyword</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">How You Can Use Custom Keywords via Katalon To Improve Test Automation Most
+                    applications nowadays are made up of several repeated steps in their navigation. These repeated
+                    steps may cause some to ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject3.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Decision Table Testing, State Transition & Error Guessing</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">The decision Table technique is one of the BlackBox test design techniques in
+                    software testing. This technique is used when there are different combinations of input for the test
+                    conditions which will have different outcomes for each combination of test inputs. Usually, this
+                    Decision table testing is used when there are complex business ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject4.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Automate Your Testing Process Using Robot Framework</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Taken from the official website, “Robot Framework is a generic open source
+                    automation framework. It can be used for test automation and robotic process automation (RPA)”. By
+                    being open source, it means anyone can use it for free without any licensing or subscription cost.
+                    Robot Framework requires little to no knowledge of programming ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject5.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
+                    Boundary Value</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Learn how Equivalence Partitioning & Boundary Value can improve your test
+                    efficiency. Proper testing of software is vital to the Ice House Methodology. That's why we are
+                    always keen to learn better ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject6.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
+                    Boundary Value</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Learn how Equivalence Partitioning & Boundary Value can improve your test
+                    efficiency. Proper testing of software is vital to the Ice House Methodology. That’s why we are
+                    always keen to learn better ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject7.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Important Test Scenarios for Mobile Apps</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Test Scenarios To Ensure Your Mobile App Runs Seamlessly
+                    In order to create high-quality software, you must thoroughly test your mobile apps. Testers can
+                    find test values by using boundary values and equivalence partitioning. Testing requires lots of
+                    time and effort, therefore, many software developers use automated testing ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject8.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Exploring The New Swift Charts from WWDC</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">How save time with the new Swift Charts feature in Swift
+                    WWDC 2022 brought new updates to the community-beloved native language for the Apple environment.
+                    Swift is back with a lot of improvements and new capabilities to help developers deliver world-class
+                    apps with ease by enhancing swift charts for data. In this blog, we're checking out ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+            <div class="flex flex-col border-2 space-y-3">
+                <img src="./images/blog/TestProject9.png" alt="Projek Satu">
+                <h1 class="px-4 text-3xl font-semibold">Introducing WeatherKit for Your iOS Apps</h1>
+                <p class="px-4 text-md">writer | date post</p>
+                <p class="px-4 text-md">Improving iOS user experience by considering weather conditions in WeatherKit
+                    At WWDC 2022, Apple introduced the WeatherKit as a global scale hyperlocal forecast framework. It
+                    helps developers add valuable and accurate weather data to their apps and services on iOS 16, iPadOS
+                    16, MacOS 13, tvOS 15 ...</p>
+                <a href="#" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between border-gray-200 bg-white px-4 py-3 sm:px-6">
+        <div class="flex flex-1 justify-between sm:hidden">
+            <a href="#"
+                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+            <a href="#"
+                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+        </div>
+        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-end">
+            <div>
+                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                    <a href="#"
+                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                        <span class="sr-only">Previous</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-current="page"
+                        class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+                    <a href="#"
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+                    <a href="#"
+                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+                    <span
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
+                    <a href="#"
+                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+                    <a href="#"
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
+                    <a href="#"
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
+                    <a href="#"
+                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                        <span class="sr-only">Next</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
     <!-- <div class="px-[8em]">
         <div class="flex flex-wrap py-[4em]">
             <div class="flex flex-col w-[60%] justify-center space-y-6">
