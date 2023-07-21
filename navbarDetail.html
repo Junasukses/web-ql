@@ -1,14 +1,14 @@
-<nav class="fixed flex flex-nowrap w-full justify-between px-10 py-3 content-center items-center shadow-[0px_10px_10px_0px_rgba(9, 5, 29, 0.171)] transition-all ease-out duration-500"
-        id="nav">
+<nav class="fixed flex flex-nowrap w-full justify-between px-10 py-3 content-center items-center shadow-[0px_10px_10px_0px_rgba(9, 5, 29, 0.171)] transition-all ease-out duration-500 bg-white"
+        id="navDetail">
         <div class="">
                 <img src="./images/logo/QL_logo_2.png" alt="logo">
         </div>
 
         <ul class="flex flex-nowrap gap-4 text-1xl font-semibold text-[#272643]">
-                <li class="nav__menu-item"><a href="#"
+                <li class="nav__menu-item"><a href="index.html"
                                 class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Tentang
                                 Kami</a></li>
-                <li class="nav__menu-item"><a href="#"
+                <li class="nav__menu-item"><a href="layanan.html"
                                 class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Layanan
                                 Kami</a></li>
                 <li class="nav__menu-item"><a href="#"
@@ -17,10 +17,19 @@
                 <li class="nav__menu-item"><a href="#"
                                 class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Karir</a>
                 </li>
-                <li class="nav__menu-item"><a href="#"
+                <li class="nav__menu-item"><a href="blog.html"
                                 class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Blog</a>
                 </li>
         </ul>
-        
+
 </nav>
-<script type="text/javascript" src="./js/script.js"></script>
+<script>
+        const navDetail = document.getElementById("navDetail");
+        window.onscroll = function () {
+                if (this.scrollY >= 20) {
+                        navDetail.classList.add("drop-shadow-xl");
+                } else {
+                        navDetail.classList.remove("drop-shadow-xl");
+                }
+        }
+</script>
