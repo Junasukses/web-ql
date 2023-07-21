@@ -20,6 +20,12 @@ html {
 	height: 450px;
 }
 
+.hero-blog {
+	background-image: var(--image-gradient), url("../images/hero-blog.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+}
 .container {
 	padding: 4em 1.2em;
 }
