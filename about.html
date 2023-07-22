@@ -22,37 +22,71 @@
 
 <body>
     <div id="navbar"></div>
-    <div class="hero-about flex flex-col justify-center items-center text-white space-y-4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zRXW6aNHbwE" title="YouTube video player"
-            frameborder="0"
+    <div class="hero-about flex flex-col justify-center items-center text-white space-y-4 h-[500px] lg:h-[680px]">
+        <iframe class="w-[240px] lg:w-[560px] lg:h-[315px]" src="https://www.youtube.com/embed/zRXW6aNHbwE"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <h1 class="font-semibold text-5xl">FASTER, SMARTER, BETTER</h1>
+        <h1 class="font-semibold text-2xl lg:text-5xl">FASTER, SMARTER, BETTER</h1>
         <p class="font-normal text-xl">Bersama Quantum Leap</p>
     </div>
-    <div class="container">
-        <div class="grid grid-cols-3 content-start gap-x-10">
-            <div class="flex flex-col items-center space-y-4">
-                <img src="./images/misi.png" alt="Misi">
-                <h1 class="text-4xl font-semibold">MISI</h1>
-                <p class="text-lg text-center">Menjadi penyedia solusi bisnis berskala internasional</p>
+
+    <div class="py-[3em] lg:py-[4em] px-[1.2em] lg:px-[4em] relative md:static overflow-hidden" data-carousel="static">
+        <div class="md:grid md:grid-cols-3 content-start gap-x-10">
+            <div class="slide relative hidden md:static md:flex flex-col items-center space-y-6 lg:space-y-4"
+                data-carousel-item>
+                <img src="./images/misi.png" alt="Misi" class="w-[50%] sm:w-[40%] lg:w-[50%]">
+                <h1 class="text-4xl font-bold">MISI</h1>
+                <p class="text-lg text-center font-medium">Menjadi penyedia solusi bisnis berskala internasional</p>
             </div>
-            <div class="flex flex-col items-center space-y-4">
-                <img src="./images/visi.png" alt="Visi">
-                <h1 class="text-4xl font-semibold">VISI</h1>
-                <p class="text-lg text-center">Selalu memberikan pelayanan yang terbaik kepada pelanggan</p>
+            <div class="slide relative hidden md:static md:flex flex-col items-center space-y-6 lg:space-y-4"
+                data-carousel-item>
+                <img src="./images/visi.png" alt="Visi" class="w-[50%] sm:w-[40%] lg:w-[50%]">
+                <h1 class="text-4xl font-bold">VISI</h1>
+                <p class="text-lg text-center font-medium">Selalu memberikan pelayanan yang terbaik kepada pelanggan</p>
             </div>
-            <div class="flex flex-col items-center space-y-4">
-                <img src="./images/value.png" alt="Value">
-                <h1 class="text-4xl font-semibold">VALUES</h1>
-                <p class="text-lg text-center">Jujur, Disiplin, Produktivitas, Sejahtera, Loyalitas, Inovatif,
+            <div class="slide relative hidden md:static md:flex flex-col items-center space-y-6 lg:space-y-4"
+                data-carousel-item>
+                <img src="./images/value.png" alt="Value" class="w-[50%] sm:w-[40%] lg:w-[50%]">
+                <h1 class="text-4xl font-bold">VALUES</h1>
+                <p class="text-lg text-center font-medium">Jujur, Disiplin, Produktivitas, Sejahtera, Loyalitas,
+                    Inovatif,
                     Improvisasi</p>
             </div>
         </div>
+        <button type="button"
+            class="absolute md:hidden top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onclick="moveSlide(-1)">
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute md:hidden top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onclick="moveSlide(1)">
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
     </div>
-    <div class="container flex flex-wrap space-x-8">
-        <h1 class="w-[30%] text-5xl font-bold">Apa Itu Quantum Leap?</h1>
-        <h1 class="w-[66%] text-lg">Quantum Leap adalah Perusahaan Software Development untuk Solusi Bisnis berbasis Web
+    <div
+        class="py-[3em] lg:py-[4em] px-[1.2em] lg:px-[4em] flex flex-col lg:flex-row text-center space-y-5  lg:space-y-0  lg:space-x-8">
+        <h1 class="text-4xl lg:w-[30%] lg:text-5xl font-bold lg:text-left">Apa Itu Quantum Leap?</h1>
+        <h1 class=" lg:w-[66%] text-lg lg:text-left">Quantum Leap adalah Perusahaan Software Development untuk Solusi
+            Bisnis berbasis
+            Web
             dan Apps berskala
             nasional yang berpusat di Surabaya. Motto Perusahaan kami adalah “Growing Together”, berkomitmen untuk
             tumbuh bersama Anda, menyediakan pelayanan yang selalu memberikan nilai tambah untuk perusahaan Anda dalam
@@ -60,47 +94,73 @@
         </h1>
     </div>
 
-    <div class="container">
-        <h1 class="text-center text-5xl font-bold mb-6">Customer</h1>
-        <div class="grid grid-cols-5 px-20 gap-4">
-            <div class="flex items-center justify-center"><img src="./images/client/client_1.png" alt="Client 1"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_2.png" alt="Client 2"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_3.png" alt="Client 3"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_4.png" alt="Client 4"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_5.png" alt="Client 5"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_6.png" alt="Client 6"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_7.png" alt="Client 7"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_8.png" alt="Client 8"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_9.png" alt="Client 9"></div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_10.png" alt="Client 10">
+    <div class="py-[3em] lg:py-[4em] px-[1.2em] lg:px-[4em]">
+        <h1 class="text-center text-4xl lg:text-5xl font-bold mb-6">Customer</h1>
+        <!-- grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 -->
+        <div
+            class="flex flex-wrap justify-center lg:grid sm:grid-cols-3 lg:grid-cols-5 px-2 lg:px-20 gap-4 items-center">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img
+                    src="./images/client/client_1.png" alt="Client 1"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img
+                    src="./images/client/client_2.png" alt="Client 2"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img
+                    src="./images/client/client_3.png" alt="Client 3"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img
+                    src="./images/client/client_4.png" alt="Client 4"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img
+                    src="./images/client/client_5.png" alt="Client 5"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_6.png"
+                    alt="Client 6"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_7.png"
+                    alt="Client 7"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_8.png"
+                    alt="Client 8"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_9.png"
+                    alt="Client 9"></div>
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_10.png"
+                    alt="Client 10">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_11.png" alt="Client 11">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_11.png"
+                    alt="Client 11">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_12.png" alt="Client 12">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_12.png"
+                    alt="Client 12">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_13.png" alt="Client 13">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_13.png"
+                    alt="Client 13">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_14.png" alt="Client 14">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_14.png"
+                    alt="Client 14">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_15.png" alt="Client 15">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_15.png"
+                    alt="Client 15">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_16.png" alt="Client 16">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_16.png"
+                    alt="Client 16">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_17.png" alt="Client 17">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_17.png"
+                    alt="Client 17">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_18.png" alt="Client 18">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_18.png"
+                    alt="Client 18">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_19.png" alt="Client 19">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_19.png"
+                    alt="Client 19">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_20.png" alt="Client 20">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_20.png"
+                    alt="Client 20">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_21.png" alt="Client 21">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_21.png"
+                    alt="Client 21">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_22.png" alt="Client 22">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_22.png"
+                    alt="Client 22">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_23.png" alt="Client 23">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_23.png"
+                    alt="Client 23">
             </div>
-            <div class="flex items-center justify-center"><img src="./images/client/client_24.png" alt="Client 24">
+            <div class="flex w-[46%] md:w-[31%] lg:w-[100%] items-center justify-center"><img src="./images/client/client_24.png"
+                    alt="Client 24">
             </div>
             <div class="flex items-center justify-center">
                 <img src="./images/client/client_25.png" alt="Client 25">
@@ -109,13 +169,15 @@
         </div>
     </div>
 
-    <div class="px-[4em] pb-[6em]">
+    <div class="py-[3em] lg:py-[4em] px-[1.2em] lg:px-[4em] lg:px-[4em] pb-[6em]">
         <div class="flex items-center flex-col space-y-6">
-            <h1 class="text-center text-5xl font-bold">Gabung Bersama Kami</h1>
-            <p class="max-w-[60%] text-center">Daftar sekarang dan biarkan bakat Anda bersinar di lingkungan yang mendorong pertumbuhan, menghargai
+            <h1 class="text-center text-4xl lg:text-5xl font-bold">Gabung Bersama Kami</h1>
+            <p class="text-lg lg:max-w-[60%] text-center">Daftar sekarang dan biarkan bakat Anda bersinar di lingkungan
+                yang
+                mendorong pertumbuhan, menghargai
                 keunggulan, dan rayakan kontribusi unik Anda. Waktu untuk langkah karir yang luar biasa adalah sekarang.
                 Raih kesempatan ini dan jadilah bagian dari sesuatu yang luar biasa!</p>
-            <a href="#" class="px-[15em] py-3 bg-[#272643] rounded-xl text-white">
+            <a href="#" class="px-[20%] py-3 bg-[#272643] rounded-xl text-white">
                 <button>See More</button>
             </a>
         </div>
@@ -123,7 +185,48 @@
     </div>
     <!-- Footer -->
     <div id="footer"></div>
+    <script>
 
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            const slides = document.getElementsByClassName("slide");
+
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+            showSlide(slideIndex += moveStep);
+        }
+
+        // change slide with the dots
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+            slides[slideIndex - 1].classList.add('flex');
+        }
+
+
+
+
+
+    </script>
 </body>
 
 </html>

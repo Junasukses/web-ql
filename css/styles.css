@@ -10,7 +10,6 @@ html {
 	background-image: var(--image-gradient), url("../images/about.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 680px;
 }
 
 .hero-layanan {
@@ -25,9 +24,6 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 450px;
-}
-.container {
-	padding: 4em 1.2em;
 }
 
 .circle-left {
@@ -92,6 +88,7 @@ html {
 .cards::-webkit-scrollbar {
 	height: 12px;
 }
+
 
 @media (min-width: 500px) {
 	.cards {
