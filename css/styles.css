@@ -16,14 +16,14 @@ html {
 	background-image: var(--image-gradient), url("../images/layanan.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 450px;
+	/* height: 450px; */
 }
 
 .hero-blog {
 	background-image: var(--image-gradient), url("../images/hero-blog.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 450px;
+	/* height: 450px; */
 }
 
 .circle-left {
@@ -88,7 +88,6 @@ html {
 .cards::-webkit-scrollbar {
 	height: 12px;
 }
-
 
 @media (min-width: 500px) {
 	.cards {
