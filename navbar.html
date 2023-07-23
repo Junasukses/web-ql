@@ -1,27 +1,44 @@
-<nav class="fixed flex flex-nowrap w-full justify-between px-10 py-3 content-center items-center shadow-[0px_10px_10px_0px_rgba(9, 5, 29, 0.171)] transition-all ease-out duration-500"
+<nav class="fixed flex flex-wrap w-full justify-between px-[1em] lg:px-[2.5em] py-3 content-center items-center shadow-[0px_10px_10px_0px_rgba(9, 5, 29, 0.171)] transition-all ease-out duration-500"
         id="nav" style="z-index: 100;">
         <div class="">
-                <a href="index.html">
-                        <img src="./images/logo/QL_logo_white.png" alt="logo" id="logo-ql">
+                <a href="index.html" class="block">
+                        <img src="./images/logo/QL_logo_white.png" alt="logo" id="logo-ql" class="w-[80%]">
                 </a>
 
         </div>
 
-        <ul class="flex flex-nowrap gap-4 text-1xl font-semibold text-white" id="ulNav">
+        <button type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 lg:hidden focus:outline-none dark:text-gray-400"
+                id="toggler-button">
+                <span class="sr-only">Toggle Menu</span>
+                <div id="open" class="h-7 flex flex-col items-end justify-between">
+                        <span class="block h-0.5 w-8 bg-white rounded-full"></span>
+                        <span class="block h-0.5 w-6 bg-white rounded-full"></span>
+                        <span class="block h-0.5 w-8 bg-white rounded-full"></span>
+                </div>
+                <div id="close" class="hidden h-7 flex flex-col items-end justify-between">
+                        <span
+                                class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform rotate-45 translate-y-0.5"></span>
+                        <span
+                                class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+                </div>
+        </button>
+        <ul class="hidden block lg:flex lg:flex-nowrap w-full lg:w-auto gap-4 text-1xl font-semibold  text-white lg:bg-transparent p-[1em] m:p-[0em] mt-[1em] lg:mt-[0] font-medium rounded-lg border-[2px] lg:border-[0px] bg-gray-800"
+                id="navbar-default">
                 <li class="nav__menu-item"><a href="about.html"
-                                class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Tentang
+                                class="px-[1em] py-[0.5em] lg:py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-blue-700 lg:hover:bg-[#272643] rounded-[0.25em] block lg:rounded-[1.5em] hover:no-underline hover:text-white">Tentang
                                 Kami</a></li>
                 <li class="nav__menu-item"><a href="layanan.html"
-                                class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Layanan
+                                class="px-[1em] py-[0.5em] lg:py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-blue-700 lg:hover:bg-[#272643] rounded-[0.25em] block lg:rounded-[1.5em] hover:no-underline hover:text-white">Layanan
                                 Kami</a></li>
                 <li class="nav__menu-item"><a href="./portofolio.html"
-                                class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Portofolio</a>
+                                class="px-[1em] py-[0.5em] lg:py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-blue-700 lg:hover:bg-[#272643] rounded-[0.25em] block lg:rounded-[1.5em] hover:no-underline hover:text-white">Portofolio</a>
                 </li>
                 <li class="nav__menu-item"><a href="#"
-                                class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Karir</a>
+                                class="px-[1em] py-[0.5em] lg:py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-blue-700 lg:hover:bg-[#272643] rounded-[0.25em] block lg:rounded-[1.5em] hover:no-underline hover:text-white">Karir</a>
                 </li>
                 <li class="nav__menu-item"><a href="blog.html"
-                                class="px-[1em] py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-[#272643] rounded-3xl hover:no-underline hover:text-white">Blog</a>
+                                class="px-[1em] py-[0.5em] lg:py-[0.9em] transition-all ease-in duration-200 bg-none hover:bg-blue-700 lg:hover:bg-[#272643] rounded-[0.25em] block lg:rounded-[1.5em] hover:no-underline hover:text-white">Blog</a>
                 </li>
         </ul>
 
