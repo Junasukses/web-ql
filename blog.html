@@ -22,8 +22,8 @@
 
 <body>
     <div id="navbar"></div>
-    <div class="hero-blog flex flex-col justify-center items-center text-white space-y-8">
-        <div class="relative w-[50%]">
+    <div class="hero-blog flex flex-col justify-center items-center text-white space-y-8 h-[350px] lg:h-[450px]">
+        <div class="relative w-[80%] lg:w-[50%]">
             <input type="text"
                 class="rounded-lg px-[1em] py-[0.8em] w-full text-black focus:ring-blue-500 focus:outline-0 focus:ring-4"
                 placeholder="Cari Disini">
@@ -33,121 +33,129 @@
 
     </div>
     <div class="w-full py-[3em]">
-        <ul class="flex justify-center space-x-2">
+        <ul class="flex overflow-x-scroll overflow-y-hidden no-scrollbar items-center h-fit md:justify-center space-x-2 px-[0.9em] lg:px-[0em]">
             <li>
-                <a href="#" class="px-[2em] py-[0.5em] bg-blue-700 text-white rounded-lg hover:no-underline">Semua</a>
+                <a href="#" class="px-[1em] text-sm lg:text-base lg:px-[2em] py-[0.5em] bg-blue-700 text-white rounded-lg hover:no-underline">Semua</a>
             </li>
             <li>
                 <a href="#"
-                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Engineering</a>
+                    class="px-[1em] text-sm lg:text-base lg:px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Engineering</a>
             </li>
             <li>
                 <a href="#"
-                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Testing</a>
+                    class="px-[1em] text-sm lg:text-base lg:px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Testing</a>
             </li>
             <li>
                 <a href="#"
-                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Project
-                    Manager</a>
+                    class="flex lg:block px-[1em] w-[9.28em] lg:w-auto text-sm lg:text-base lg:px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Project Manager</a>
             </li>
             <li>
                 <a href="#"
-                    class="px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Business</a>
+                    class="px-[1em] text-sm lg:text-base lg:px-[2em] py-[0.5em] hover:bg-blue-700 hover:text-white hover:no-underline rounded-lg transition-all duration-300">Business</a>
             </li>
         </ul>
     </div>
-    <div class="px-[8em] pt-[4em] pb-[1em]">
-        <div class="grid grid-cols-3 gap-6">
+    <div class="px-[1em] lg:px-[4em] xl:px-[8em] pt-[0em] lg:pt-[4em] pb-[1em]">
+        <div class="grid grod-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject1.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Scriptless Test Automation with TestProject</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Scriptless test automation is a method to automate tests using tools instead of
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Scriptless Test Automation with TestProject</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Scriptless test automation is a method to automate tests using tools instead of
                     writing test scripts
                     from scratch. The term scriptless refers to an approach to automate the functional test cases
                     without or with a minimum amount of code (some code might be required to handle the critical
                     actions). There are some tools that the tester could use to do automation ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject2.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Test Automation with Katalon: Optimize Script Reusability By
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Test Automation with Katalon: Optimize Script Reusability By
                     Using a Custom Keyword</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">How You Can Use Custom Keywords via Katalon To Improve Test Automation Most
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">How You Can Use Custom Keywords via Katalon To Improve Test Automation Most
                     applications nowadays are made up of several repeated steps in their navigation. These repeated
                     steps may cause some to ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject3.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Decision Table Testing, State Transition & Error Guessing</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">The decision Table technique is one of the BlackBox test design techniques in
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Decision Table Testing, State Transition & Error Guessing</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">The decision Table technique is one of the BlackBox test design techniques in
                     software testing. This technique is used when there are different combinations of input for the test
                     conditions which will have different outcomes for each combination of test inputs. Usually, this
                     Decision table testing is used when there are complex business ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject4.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Automate Your Testing Process Using Robot Framework</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Taken from the official website, “Robot Framework is a generic open source
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Automate Your Testing Process Using Robot Framework</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Taken from the official website, “Robot Framework is a generic open source
                     automation framework. It can be used for test automation and robotic process automation (RPA)”. By
                     being open source, it means anyone can use it for free without any licensing or subscription cost.
                     Robot Framework requires little to no knowledge of programming ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject5.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
                     Boundary Value</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Learn how Equivalence Partitioning & Boundary Value can improve your test
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Learn how Equivalence Partitioning & Boundary Value can improve your test
                     efficiency. Proper testing of software is vital to the Ice House Methodology. That's why we are
                     always keen to learn better ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject6.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Optimize Test Case Coverage with Equivalence Partitioning &
                     Boundary Value</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Learn how Equivalence Partitioning & Boundary Value can improve your test
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Learn how Equivalence Partitioning & Boundary Value can improve your test
                     efficiency. Proper testing of software is vital to the Ice House Methodology. That’s why we are
                     always keen to learn better ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject7.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Important Test Scenarios for Mobile Apps</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Test Scenarios To Ensure Your Mobile App Runs Seamlessly
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Important Test Scenarios for Mobile Apps</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Test Scenarios To Ensure Your Mobile App Runs Seamlessly
                     In order to create high-quality software, you must thoroughly test your mobile apps. Testers can
                     find test values by using boundary values and equivalence partitioning. Testing requires lots of
                     time and effort, therefore, many software developers use automated testing ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject8.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Exploring The New Swift Charts from WWDC</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">How save time with the new Swift Charts feature in Swift
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Exploring The New Swift Charts from WWDC</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">How save time with the new Swift Charts feature in Swift
                     WWDC 2022 brought new updates to the community-beloved native language for the Apple environment.
                     Swift is back with a lot of improvements and new capabilities to help developers deliver world-class
                     apps with ease by enhancing swift charts for data. In this blog, we're checking out ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
             <div class="flex flex-col border-2 space-y-3">
                 <img src="./images/blog/TestProject9.png" alt="Projek Satu" class="h-[10em] bg-cover">
-                <h1 class="px-4 text-3xl font-semibold">Introducing WeatherKit for Your iOS Apps</h1>
-                <p class="px-4 text-md">writer | date post</p>
-                <p class="px-4 text-md">Improving iOS user experience by considering weather conditions in WeatherKit
+                <h1 class="px-4 text-2xl xl:text-3xl font-semibold">Introducing WeatherKit for Your iOS Apps</h1>
+                <p class="px-4 text-base lg:text-lg">writer | date post</p>
+                <p class="px-4 text-base text-justify lg:text-lg">Improving iOS user experience by considering weather conditions in WeatherKit
                     At WWDC 2022, Apple introduced the WeatherKit as a global scale hyperlocal forecast framework. It
                     helps developers add valuable and accurate weather data to their apps and services on iOS 16, iPadOS
                     16, MacOS 13, tvOS 15 ...</p>
-                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read More</a>
+                <a href="artikel.html" class="px-4 mb-3 text-blue-600 hover:text-blue-900 hover:no-underline">Read
+                    More</a>
             </div>
         </div>
     </div>
