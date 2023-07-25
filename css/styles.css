@@ -45,11 +45,11 @@ html {
 	);
 	filter: blur(35px);
 	border-radius: 50%;
-	width: 350px;
-	height: 350px;
-	left: -60%;
-	top: 45%;
-	transform: translate(60%, -45%);
+	width: 250px;
+	height: 250px;
+	left: -80%;
+	top: -15%;
+	transform: translateX(80%);
 	position: absolute;
 	z-index: -10;
 }
@@ -62,23 +62,48 @@ html {
 	);
 	filter: blur(35px);
 	border-radius: 50%;
-	width: 350px;
-	height: 350px;
-	left: 150%;
-	top: 45%;
-	transform: translate(-150%, -45%);
+	width: 250px;
+	height: 250px;
+	left: 180%;
+	top: -15%;
+	transform: translateX(-180%);
 	position: absolute;
 	z-index: -10;
 }
 
+@media (min-width: 1280px) {
+	.circle-left {
+		left: -60%;
+		top: 45%;
+		transform: translate(60%, -45%);
+		width: 350px;
+		height: 350px;
+	}
+	.circle-right {
+		left: 150%;
+		top: 45%;
+		transform: translate(-150%, -45%);
+		width: 350px;
+		height: 350px;
+	}
+}
 .gradient-webDev {
 	background: linear-gradient(
 		180deg,
 		rgba(44, 105, 141, 0.89) 0%,
-		#ffffff 100%
+		rgba(44, 105, 141, 0.4) 100%
 	);
 }
 
+@media (min-width: 1024px) {
+	.gradient-webDev {
+		background: linear-gradient(
+			180deg,
+			rgba(44, 105, 141, 0.89) 0%,
+			#ffffff 100%
+		);
+	}
+}
 .card-step {
 	box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.25);
 	-webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.25);
@@ -86,8 +111,8 @@ html {
 }
 .cards {
 	display: grid;
-	grid-auto-columns: 100%;
-	grid-column-gap: 10px;
+	grid-auto-columns: 95%;
+	grid-column-gap: 20px;
 	grid-auto-flow: column;
 	padding: 25px 0px;
 	list-style: none;
@@ -109,7 +134,7 @@ html {
 
 @media (min-width: 700px) {
 	.cards {
-		grid-auto-columns: calc(calc(100% / 3) - 20px);
+		grid-auto-columns: calc(calc(90% / 2) - 20px);
 		grid-column-gap: 30px;
 	}
 }
