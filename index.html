@@ -23,39 +23,39 @@
     <div id="navbar"></div>
 
     <section class="flex items-center justify-center w-full h-screen bg-[url('./images/background.png')] bg-cover">
-        <div class="flex gap-x-20 text-white">
-          <div class="max-w-[35rem]">
+        <div class="flex flex-wrap justify-center gap-x-20 mx-10 text-white">
+          <div class="max-w-[35rem] mb-10">
             <p class="text-[45px] font-bold">Ingin Memulai Proyek IT ?</p>
             <p class="text-[25px]">Kami siap membantu Anda membangun sistem impian Anda. GRATIS KONSULTASI dengan Pakar IT & Business Process</p>
-            <div class="text-black mt-5">
-              <button class="w-[267px] h-[52px] text-[25px] rounded-full bg-white">Konsultasi Gratis</button>
-              <button class="w-[267px] h-[52px] text-[25px] rounded-full bg-white">Jadwalkan Demo</button>
+            <div class="flex flex-wrap text-black mt-5 gap-6">
+              <button class="w-[267px] h-[52px] text-[25px] font-bold rounded-full bg-[#F3C51F]">Konsultasi Gratis</button>
+              <button class="w-[267px] h-[52px] text-[25px] font-bold rounded-full bg-white">Jadwalkan Demo</button>
             </div>
           </div>
-          <div>
+          <div class="hidden sm:block">
             <img src="./images/mockup.png" alt="mockup">
           </div>
         </div>
     </section>
     <div class="flex flex-column items-center justify-center pb-10">
-        <section class="flex flex-column items-center justify-center w-full">
-            <div class="flex w-[1079px] h-[97px] justify-between items-center my-10">
-                <div class="flex flex-column justify-center items-center">
-                    <p class="text-[55px] font-bold text-[#2C698D]">15+</p>
-                    <p class="text-[25px]">Proyek telah dikerjakan</p>
-                </div>
-                <div class="flex flex-column justify-center items-center">
-                    <p class="text-[55px] font-bold text-[#2C698D]">50+</p>
-                    <p  class="text-[25px]">Produk telah diluncurkan</p>
-                </div>
-                <div class="flex flex-column justify-center items-center">
-                    <p class="text-[55px] font-bold text-[#2C698D]">100+</p>
-                    <p  class="text-[25px]">Ekspert siap membantu anda</p>
-                </div>
+        <section class="flex flex-wrap max-w-[1079px] w-full justify-evenly my-10">
+            <div class="flex flex-column justify-center items-center">
+                <p class="text-[55px] font-bold text-[#2C698D]">15+</p>
+                <p class="text-[25px]">Proyek telah dikerjakan</p>
             </div>
+            <div class="flex flex-column justify-center items-center">
+                <p class="text-[55px] font-bold text-[#2C698D]">50+</p>
+                <p  class="text-[25px]">Produk telah diluncurkan</p>
+            </div>
+            <div class="flex flex-column justify-center items-center">
+                <p class="text-[55px] font-bold text-[#2C698D]">100+</p>
+                <p  class="text-[25px]">Ekspert siap membantu anda</p>
+            </div>
+        </section>
+        <section class="flex flex-column items-center justify-center w-full">
             <p class="text-[40px] font-bold my-6">Portofolio</p>
-            <div class="flex flex-column gap-y-10 w-full justify-center items-center">
-                <div class="flex flex-wrap gap-x-24 ">
+            <div class="flex flex-column  gap-y-10 w-full justify-center items-center">
+                <div class="flex flex-wrap justify-evenly gap-14 sm:gap-24">
                     <div class="flex flex-col space-y-6 justify-center items-center w-[254px] h-[336px] bg-[url('./images/portofolio/bg_olympic_furniture.png')]">
                         <img src="./images/portofolio/Macbook_olympic_furniture.png" alt="Olympic Furniture">
                         <p class="text-[25px] font-bold text-white">Olympic Furniture</p>
@@ -72,7 +72,7 @@
                         <button class="w-[121px] h-[40px] bg-white rounded-[10px] border-2 border-[#106EED] size-[15px] text-[#106EED] font-bold">Lihat Project</button>
                     </div>
                 </div>
-                <div class="flex flex-wrap flex-wrap gap-x-24">
+                <div class="flex flex-wrap justify-center flex-wrap gap-24">
                     <div class="flex flex-col space-y-6 justify-center items-center w-[254px] h-[336px] bg-[url('./images/portofolio/bg_platinum_ceramics.png')]">
                         <img src="./images/portofolio/Retina_platinum_ceramics.png" alt=">Platinum Ceramics">
                         <p class="text-[25px] font-bold text-white">Platinum Ceramics</p>
@@ -94,7 +94,7 @@
 
         <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px]">
             <p class="text-[40px] font-bold my-6">Layanan Kami</p>
-            <div class="flex flex-wrap justify-around items-center w-full">
+            <div class="flex flex-wrap justify-around items-center gap-10 w-full">
                 <div class="flex flex-column items-center justify-center w-[328px] gap-y-4">
                     <img class="w-[150px] h-[150px]" src="./images/layanan/erp_system_developer.svg" alt="ERP System Developer">
                     <p class="text-[22px] font-bold">ERP System Developer</p>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-wrap justify-around items-center w-full">
+            <div class="flex flex-wrap justify-around items-center gap-10 w-full">
                 <div class="flex flex-column items-center justify-center w-[328px] gap-y-4">
                     <img class="w-[150px] h-[150px]" src="./images/layanan/website_development.svg" alt="Website Development">
                     <p class="text-[22px] font-bold">Website Development</p>
@@ -151,7 +151,7 @@
 
         <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px]">
             <p class="text-[40px] font-bold my-6">Keunggulan Kami</p>
-            <div class="flex  justify-around items-center w-full">
+            <div class="flex flex-wrap gap-8 justify-around items-center w-full">
                 <div class="flex flex-column items-center justify-center w-[282px] gap-y-4">
                     <img class="w-[150px] h-[150px]" src="./images/keunggulan/dashboard.svg" alt="Dashboard">
                     <p class="text-[25px] font-bold">Dashboard</p>
@@ -168,7 +168,7 @@
                     <p class="text-[25px] text-center">Pengguna Tak Terbatas untuk Skalabilitas Optimal</p>
                 </div>
             </div>
-            <div class="flex gap-10 justify-center items-center w-full">
+            <div class="flex flex-wrap gap-10 justify-center items-center w-full">
                 <div class="flex flex-column items-center justify-center w-[282px] gap-y-4">
                     <img class="w-[150px] h-[150px]" src="./images/keunggulan/rt_notification_featurel.svg" alt="RT Notification Feature">
                     <p class="text-[25px] font-bold">RT Notification Feature</p>
@@ -184,7 +184,7 @@
 
         <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px]">
             <p class="text-[40px] font-bold my-6">Testimoni</p>
-            <div class="flex gap-10 justify-center items-centter w-full">
+            <div class="flex flex-wrap gap-10 justify-center items-centter w-full">
                 <div class="flex flex-column justify-center bg-white items-center w-[216px] rounded-[10px] border-2 border-black px-3 drop-shadow-[10px_10px_10px_rgba(0,0,0,0.25)]">
                     <img class="h-[100] w-[100] pt-3" src="./images/testimoni/person1.png" alt="person">
                     <p class="text-[13px] pt-3">Lorem ipsum dolor sit amet. Sit asperiores totam nam dolorum sint aut voluptatibus itaque eum itaque nobis et cupiditate omnis! Et incidunt itaque et perspiciatis quam ea praesentium soluta.</p>
@@ -210,97 +210,97 @@
         <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px] pt-10">
             <p class="text-[40px] font-bold my-6">Customer</p>
             <div class="flex flex-wrap justify-around items-center w-full">
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/mepolyindustry.png" alt="mepolyindustry">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/bca.png" alt="bca">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/pdamtirtabumiserasi.png" alt="pdamtirtabumiserasi">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/dinaskesehatangresik.png" alt="dinaskesehatangresik">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img  src="./images/customer/rssa.png" alt="rssa">
                 </div>
             </div>
             <div class="flex flex-wrap justify-around items-center w-full">
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/plnbatubara.png" alt="plnbatubara">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/pjb.png" alt="pbj">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/mkp.png" alt="mkp">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/rsudmalang.png" alt="rsudmalang">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img  src="./images/customer/olympic.png" alt="olympic">
                 </div>
             </div>
             <div class="flex flex-wrap justify-around items-center w-full">
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/integra.png" alt="integra">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/interkraft.png" alt="interkraft">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/platinum.png" alt="platinum">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/ptmeikoabadi.png" alt="ptmeikoabadi">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img  src="./images/customer/jpt.png" alt="jpt">
                 </div>
             </div>
             <div class="flex flex-wrap justify-around items-center w-full">
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/aster.png" alt="mepolyindustry">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/jayasteel.png" alt="jayasteel">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/luckystar.png" alt="luckystar">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/ce.png" alt="ce">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img  src="./images/customer/bi.png" alt="bi">
                 </div>
             </div>
             <div class="flex flex-wrap justify-around items-center w-full">
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/alkonusa.png" alt="alkonusa">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/dbelgamart.png" alt="dbelgamart">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/jetzdental.png" alt="jetzdental">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img src="./images/customer/skn.png" alt="skn">
                 </div>
-                <div class="w-200">
+                <div class="w-200 h-200">
                     <img  src="./images/customer/ptjakrindomas.png" alt="ptjakrindomas">
                 </div>
             </div>
         </section>
 
         <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px] pt-10">
-            <p class="text-[40px] font-bold my-6 self-start">Blog</p>
-            <div class="flex justify-between w-full">
+            <p class="text-[40px] font-bold my-6 self-start pl-10">Blog</p>
+            <div class="flex flex-wrap justify-around w-full gap-y-10 gap-x-5">
                 <div class="w-[284px] border-[0.5px] border-[rgba(255,255,255, 0.5)]">
-                    <img src="./images/blog/TestProject.png" alt="TestProject">
+                    <img src="./images/blog/TestProject1.png" alt="TestProject">
                     <p class="text-[25px] font-bold px-3 pt-4">Scriptless Test Automation with TestProject</p>
                     <p class="text-[13px] px-3 pt-1">writer | date post</p>
                     <p class="text-[13px] px-3 pt-1 pb-4">Scriptless test automation is a method to automate tests using tools instead of writing test scripts 
@@ -309,14 +309,14 @@
                     <p class="text-[13px] text-[#2C698D] px-3 pb-4">READ MORE</p>
                 </div>
                 <div class="w-[284px] border-[0.5px] border-[rgba(255,255,255, 0.5)]">
-                    <img src="./images/blog/katalonStudio.png" alt="TestProject">
+                    <img src="./images/blog/TestProject2.png" alt="TestProject">
                     <p class="text-[25px] font-bold px-3 pt-4">Test Automation with Katalon: Optimize Script Reusability By Using a Custom Keyword</p>
                     <p class="text-[13px] px-3 pt-1">writer | date post</p>
                     <p class="text-[13px] px-3 pt-1 pb-4">Most applications nowadays are made up of several repeated steps in their navigation ...</p>
                     <p class="text-[13px] text-[#2C698D] px-3 pb-4">READ MORE</p>
                 </div>
                 <div class="w-[284px] border-[0.5px] border-[rgba(255,255,255, 0.5)]">
-                    <img src="./images/blog/testcasedesign.png" alt="TestProject">
+                    <img src="./images/blog/TestProject3.png" alt="TestProject">
                     <p class="text-[25px] font-bold px-3 pt-4">Decision Table Testing, State Transition & Error Guessing</p>
                     <p class="text-[13px] px-3 pt-1">writer | date post</p>
                     <p class="text-[13px] px-3 pt-1 pb-4">Decision Table Testing, State Transition & Error Guessing can be very powerful in increasing your test design coverage. 
@@ -324,12 +324,14 @@
                     <p class="text-[13px] text-[#2C698D] px-3 pb-4">READ MORE</p>
                 </div>
             </div>
-            <button class="w-[621px] h-[60px] px-[10px] py-[11px] bg-[#272643] text-white font-bold text-[25px] rounded-[10px]">Baca Artikel Lainnya</button>
+            <div class="flex justify-center items-center w-full">
+                <button class="max-w-[621px] mx-4 w-full px-[10px] py-[11px] bg-[#272643] text-white font-bold text-[25px] rounded-[10px]">Baca Artikel Lainnya</button>
+            </div>
         </section>
 
-        <section class="flex flex-column gap-y-10 w-full justify-center items-center max-w-[1200px] pt-10 h-full">
-            <p class="text-[40px] font-bold my-6">Hubungi Kami</p>
-            <div class="flex justify-between w-full h-[424px]">
+        <section class="flex flex-column gap-y-10 justify-center items-center max-w-[1200px] pt-10 w-full">
+            <!-- <p class="text-[40px] font-bold my-6">Hubungi Kami</p> -->
+            <!-- <div class="flex flex-wrap justify-evenly  w-full gap-y-10">
                 <div class="w-[465px] h-[424px]">
                     <iframe 
                         class="w-full h-full" 
@@ -338,23 +340,27 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                <div class="flex flex-column justify-between w-[664px] h-full">
-                    <form>
-                        <div>
-                            <div class="flex justify-between w-full">
-                                <input class="w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="text" placeholder="Nama">
-                                <input class="w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="email" placeholder="Email">
-                            </div>
-                            <div class="flex justify-between w-full py-6">
-                                <input class="w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="tel" placeholder="Telepon">
-                                <input class="w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="text" placeholder="Perusahaan">
-                            </div>
+                </div> -->
+               
+             
+                <form class="flex flex-column justify-center gap-4 items-center max-w-[764px] w-full px-10">
+                    <div class="flex flex-column gap-4 max-w-[1200px] w-full">
+                        <div class="flex flex-wrap justify-evenly gap-4 items-center max-w-[1200px] w-full">
+                            <input class="w-full max-w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="text" placeholder="Nama">
+                            <input class="w-full max-w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="email" placeholder="Email">
                         </div>
-                        <textarea class="w-[664px] py-2 h-[151px] px-[10px] border-[1px] border-black rounded-[10px]" maxlength="255"  placeholder="Pesan"></textarea>
-                    </form>
-                    <button class="w-[664px] h-[59px] bg-[#272643] rounded-[15px] text-white self-end">Kirim Sekarang</button>
-                </div>
+                        <div class="flex flex-wrap justify-evenly gap-4 items-center max-w-[1200px] w-full">
+                            <input class="w-full max-w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="tel" placeholder="Telepon">
+                            <input class="w-full max-w-[302px] h-[59px] px-[10px] border-[1px] border-black rounded-[10px]" type="text" placeholder="Perusahaan"> 
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[664px]">
+                        <textarea class="w-full py-2 h-[151px] px-[10px] border-[1px] border-black rounded-[10px]" maxlength="255"  placeholder="Pesan"></textarea>
+                    </div>
+                    <div class="w-full max-w-[664px]">
+                        <button class="w-full h-[59px] bg-[#106EED] rounded-[15px] text-white self-end sm:bg-[#272643]">Kirim Sekarang</button>
+                    </div>
+                </form>
                 
             </div>
         </section>
