@@ -23,7 +23,7 @@
 <body>
     <div id="body">
         <div id="navbar"></div>
-        <div class="pt-[9em] px-[0.4em] lg:ml-[5em] xl:ml-[10em] pb-[2em]">
+        <div class="pt-[7em] lg:pt-[9em] px-[0.4em] md:ml-[3em] lg:ml-[5em] xl:ml-[10em] pb-[2em]">
             <ul
                 class="flex overflow-x-scroll overflow-y-hidden no-scrollbar items-center h-fit space-x-2 px-[0.9em] lg:px-[0em] w-full text-sm lg:text-lg">
                 <li class="shrink-0">
@@ -43,19 +43,20 @@
                 </li>
             </ul>
         </div>
-        <div class="px-[1em] lg:px-[5em] xl:px-[10em]">
-            <div class="flex flex-row w-full space-x-4">
-                <div>
+        <div class="px-[1em] md:px-[4em] lg:px-[5em] xl:px-[10em]">
+            <div class="grid grid-cols-12 w-full space-x-4">
+                <div class="col-span-3 md:col-span-2 lg:col-span-1">
                     <img src="./images/karir/ads.png" alt="Digital Marketing">
                 </div>
-                <div class="flex-col text-lg">
-                    <h1 class="font-bold text-4xl mb-2">Digital Marketing</h1>
-                    <p class="text-base lg:text-lg"><span class="fas fa-map-pin"></span> Onsite, Surabaya</p>
-                    <p><span class="far fa-clock"></span> Full Time</p>
+                <div class="flex-col text-lg  col-span-9 md:col-span-5 lg:col-span-6">
+                    <h1 class="font-bold text-2xl lg:text-4xl mb-2">Digital Marketing</h1>
+                    <p class="text-sm lg:text-lg"><span class="fas fa-map-pin"></span> Onsite, Surabaya</p>
+                    <p class="text-sm lg:text-lg"><span class="far fa-clock"></span> Full Time</p>
                 </div>
-                <div class="flex-row ml-auto">
+
+                <div class="!ml-[0em] mt-[1em] md:mt-[0em] lg:mt-[0em] lg:!ml-auto col-span-11 md:col-span-5 lg:col-span-5">
                     <div
-                        class="bg-blue-600 px-[2em] py-[1em] rounded-xl text-white font-medium flex items-center text-lg space-x-4">
+                        class="bg-blue-600 px-[1em] lg:px-[2em] py-[1em] rounded-xl text-white font-medium flex items-center text-sm lg:text-lg space-x-4">
                         <img src="./images/wallet.png" alt="Gaji" class="w-[15%]">
                         <span>Rp3.750.000 - Rp4.000.000</span>
                     </div>
@@ -64,7 +65,7 @@
 
             <div class="py-5 space-y-6">
                 <div class="space-y-2">
-                    <h1 class="font-semibold text-2xl lg:text-4xl">Deskripsi Pekerjaan
+                    <h1 class="font-bold text-2xl lg:text-4xl">Deskripsi Pekerjaan
                     </h1>
                     <p class="text-base lg:text-lg">Sebagai Spesialis Pemasaran Digital, Anda akan memainkan peran
                         penting
@@ -79,7 +80,7 @@
                     </p>
                 </div>
                 <div class="space-y-2">
-                    <h1 class="font-semibold text-2xl lg:text-4xl">Skill Yang Dibutuhkan</h1>
+                    <h1 class="font-bold text-2xl lg:text-4xl">Skill Yang Dibutuhkan</h1>
                     <div class="flex flex-wrap gap-3">
                         <span
                             class="border-[0.14em] border-blue-400 px-[1em] py-[0.5em] rounded-xl hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-200">Komunikasi
@@ -108,7 +109,7 @@
                 </div>
 
                 <div class="space-y-2">
-                    <h1 class="font-semibold text-2xl lg:text-3xl">Persyaratan</h1>
+                    <h1 class="font-bold text-2xl lg:text-3xl">Persyaratan</h1>
                     <ul class="list-disc px-[1.5em] text-base lg:text-lg">
                         <li>Lulusan minimal D3/S1 jurusan terkait</li>
                         <li>
@@ -118,7 +119,7 @@
                     </ul>
                 </div>
                 <div class="space-y-2">
-                    <h1 class="font-semibold text-2xl lg:text-3xl">
+                    <h1 class="font-bold text-2xl lg:text-3xl">
                         Tanggung Jawab
                     </h1>
                     <ul class="list-disc px-[1.5em] text-base lg:text-lg">
@@ -153,7 +154,8 @@
                     </ul>
                 </div>
                 <div class="flex justify-center">
-                    <button class="bg-[#272643] text-white px-[15%] py-[1em] rounded-xl text-lg font-semibold"
+                    <button
+                        class="bg-[#272643] text-white px-[15%] py-[1em] rounded-xl text-base lg:text-lg font-semibold"
                         onclick="openForm()">Daftar Sekarang</button>
                 </div>
                 <a href="karir.html"
@@ -164,9 +166,9 @@
         <!-- Footer -->
         <div id="footer"></div>
     </div>
-    <div class="fixed top-[6em] left-0 right-0 z-[100] hidden flex justify-center overflow-y-scroll w-full h-full max-h-full !mt-[0em]"
+    <div class="fixed top-[2em] lg:top-[6em] left-0 right-0 z-[100] hidden flex justify-center overflow-y-scroll w-full h-full max-h-full !mt-[0em]"
         id="myForm">
-        <form action="#" class="w-[30%]" onsubmit="return false;">
+        <form action="#" class="w-[90%] md:w-[50%] lg:w-[40%]" onsubmit="return false;">
             <div class="bg-white p-[2em] h-[80%] overflow-y-scroll no-scrollbar rounded-xl border-2" id="form">
                 <div class="flex">
                     <button class="ml-auto text-[1.5em]" onclick="closeForm()">
@@ -258,6 +260,8 @@
         function closeForm() {
             document.getElementById("body").classList.remove("blur-[5px]");
             document.getElementById("myForm").classList.add("hidden");
+            document.getElementById("form").classList.remove("hidden");
+            document.getElementById("congrats").classList.add("hidden");
         }
         const UPLOAD_BUTTON = document.getElementById("upload-button");
         const FILE_INPUT = document.querySelector("input[type=file]");
